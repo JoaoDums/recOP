@@ -10,10 +10,22 @@
 
     //Entrada
 
-
+    const dificil = prompt("Qual e o assunto mais dificil em programação digite(VO) para variaveis e operadores, (ED) para estrutura de dicisão e (RE) para estruturas de repetição").toUpperCase();
     //Processamento
 
+    switch (dificil) {
+        case "VO":
+            alert(`Primeiro`);
+            break;
+        case "ED":
+            alert(`Segundo`)
+            break;
 
+        case "RE": alert(`Terceiro`)
+        default:
+            alert(`valor Invalido`)
+            break;
+    }
     //Saída
 
 </script>

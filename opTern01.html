@@ -11,11 +11,17 @@
     */
 
     //Entrada
+ const preço = Number(prompt("Qual é o preço da sua viagem ?"));
+
 
 
     //Processamento
-
+    let precoParcela = 0;
+   (preço <= 500) ? precoParcela = preço
+: (preço <= 1000) ? precoParcela = (preço/2)
+: (preço <= 1500) ?precoParcela = (preço/4) 
+: precoParcela = precoParcela = (preço/10)
+    document.write(`você pagará em: R$${precoParcela} sem juros.</br> e o preço final será de: R$${preço}.`);
 
     //Saída
-
 </script>

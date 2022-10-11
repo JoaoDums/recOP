@@ -11,10 +11,13 @@
 
     //Entrada
 
+    const distancia = Number(prompt("Qual é a distancia que o entregador percorre para realizar a entrega ?"));
 
     //Processamento
-
-
+    let valorFinalEntrega = (0);
+    (distancia <= 50) ? valorFinalEntrega = distancia +( distancia* 1) 
+    :(distancia <= 100) ? valorFinalEntrega = distancia + (distancia * 0.15)
+    : valorFinalEntrega = distancia + (distancia * 0.25)
     //Saída
-
+    document.write(`o valor final da entrega será de ${valorFinalEntrega}.`);
 </script>
